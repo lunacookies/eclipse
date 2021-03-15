@@ -21,6 +21,14 @@
 			"foreground": "#79ABFF",
 			"fontStyle": ""
 		},
+		"string": {
+			"foreground": "#17C6A3",
+			"fontStyle": ""
+		},
+		"number": {
+			"foreground": "#6897BB",
+			"fontStyle": ""
+		},
 		"function": {
 			"foreground": "#A7EC21",
 			"fontStyle": ""
