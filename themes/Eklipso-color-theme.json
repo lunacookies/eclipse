@@ -92,6 +92,14 @@
 		"property": {
 			"foreground": "#66E1F8",
 			"fontStyle": ""
+		},
+		"attribute": {
+			"foreground": "#A1ABB5",
+			"italic": true
+		},
+		"*.attribute": {
+			"foreground": "#A1ABB5",
+			"italic": true
 		}
 	},
 	"tokenColors": []
