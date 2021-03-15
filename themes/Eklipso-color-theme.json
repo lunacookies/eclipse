@@ -53,6 +53,10 @@
 			"foreground": "#1EB540",
 			"fontStyle": ""
 		},
+		"macro": {
+			"foreground": "#80F6A7",
+			"fontStyle": ""
+		},
 		"type": {
 			"foreground": "#1290C3",
 			"fontStyle": ""
