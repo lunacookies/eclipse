@@ -14,35 +14,35 @@
 			"fontStyle": ""
 		},
 		"variable": {
-			"foreground": "#EDE361",
+			"foreground": "#DDD34F",
 			"fontStyle": ""
 		},
 		"variable.declaration": {
-			"foreground": "#F8F929",
+			"foreground": "#D4D655",
 			"fontStyle": ""
 		},
 		"parameter": {
-			"foreground": "#7DAEFF",
+			"foreground": "#89AFED",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#32C8A9",
+			"foreground": "#61C3AA",
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#6795B6",
+			"foreground": "#5197C6",
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#9CE824",
+			"foreground": "#A1E645",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#9CE824",
+			"foreground": "#A1E645",
 			"fontStyle": ""
 		},
 		"method.static": {
-			"foreground": "#8AEC41",
+			"foreground": "#91E956",
 			"italic": true
 		},
 		"function.declaration": {
@@ -54,48 +54,48 @@
 			"fontStyle": ""
 		},
 		"macro": {
-			"foreground": "#83FBB2",
+			"foreground": "#72EAA2",
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#1B8ABD",
+			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#1B8ABD",
+			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#1B8ABD",
+			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#1B8ABD",
+			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#1B8ABD",
+			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#87F2F8",
+			"foreground": "#76E2E7",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#CC81BC",
+			"foreground": "#D696C7",
 			"italic": true
 		},
 		"enumMember": {
-			"foreground": "#8FDAF8",
+			"foreground": "#81DCFF",
 			"italic": true
 		},
 		"*.constant": {
-			"foreground": "#8FDAF8",
+			"foreground": "#81DCFF",
 			"bold": true,
 			"italic": true
 		},
 		"variable.static": {
-			"foreground": "#8FDAF8",
+			"foreground": "#81DCFF",
 			"bold": true,
 			"italic": true
 		},
@@ -104,7 +104,7 @@
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#6BE1F5",
+			"foreground": "#77E0F2",
 			"fontStyle": ""
 		},
 		"attribute": {
