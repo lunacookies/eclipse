@@ -17,6 +17,10 @@
 			"foreground": "#F2F200",
 			"fontStyle": ""
 		},
+		"parameter": {
+			"foreground": "#79ABFF",
+			"fontStyle": ""
+		},
 		"function": {
 			"foreground": "#A7EC21",
 			"fontStyle": ""

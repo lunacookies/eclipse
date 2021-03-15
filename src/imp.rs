@@ -15,6 +15,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("variable"), palette.light_yellow());
     builder.add_rule(Semantic("variable.declaration"), palette.yellow());
+    builder.add_rule(Semantic("parameter"), palette.blue());
 
     builder.add_rules(
         &[Semantic("function"), Semantic("method")],
@@ -33,7 +34,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("builtinType"),
             Semantic("typeAlias"),
         ],
-        palette.blue(),
+        palette.dark_blue(),
     );
 
     builder.add_rule(Semantic("interface"), palette.light_cyan());
