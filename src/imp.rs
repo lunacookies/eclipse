@@ -22,8 +22,9 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("builtinType"),
             Semantic("typeAlias"),
             Semantic("typeParameter"),
-            Semantic("interface"),
         ],
         palette.blue(),
     );
+
+    builder.add_rule(Semantic("interface"), palette.cyan());
 }
