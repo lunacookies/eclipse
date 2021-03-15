@@ -9,6 +9,14 @@
 			"foreground": "#CC6C1D",
 			"fontStyle": ""
 		},
+		"variable": {
+			"foreground": "#F3EC79",
+			"fontStyle": ""
+		},
+		"variable.declaration": {
+			"foreground": "#F2F200",
+			"fontStyle": ""
+		},
 		"function": {
 			"foreground": "#A7EC21",
 			"fontStyle": ""
@@ -55,6 +63,10 @@
 		},
 		"typeParameter": {
 			"foreground": "#BFA4A4",
+			"fontStyle": ""
+		},
+		"property": {
+			"foreground": "#66E1F8",
 			"fontStyle": ""
 		}
 	},
