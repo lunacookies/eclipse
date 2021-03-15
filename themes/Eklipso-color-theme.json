@@ -89,6 +89,16 @@
 			"foreground": "#8DDAF8",
 			"italic": true
 		},
+		"*.constant": {
+			"foreground": "#8DDAF8",
+			"bold": true,
+			"italic": true
+		},
+		"variable.static": {
+			"foreground": "#8DDAF8",
+			"bold": true,
+			"italic": true
+		},
 		"typeParameter": {
 			"foreground": "#BFA4A4",
 			"fontStyle": ""
