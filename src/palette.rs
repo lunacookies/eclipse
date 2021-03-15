@@ -31,6 +31,14 @@ impl Palette {
     pub(crate) fn salmon(&self) -> Oklch {
         oklch(0.74244213, 0.03172374, 17.786991)
     }
+
+    pub(crate) fn lime_green(&self) -> Oklch {
+        oklch(0.856865, 0.21560241, 132.73979)
+    }
+
+    pub(crate) fn light_lime_green(&self) -> Oklch {
+        oklch(0.8648584, 0.21983564, 128.32455)
+    }
 }
 
 #[derive(Debug, Clone, Copy)]

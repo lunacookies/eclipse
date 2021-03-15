@@ -14,6 +14,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("keyword"), palette.brown());
 
     builder.add_rules(
+        &[Semantic("function"), Semantic("method")],
+        palette.light_lime_green(),
+    );
+    builder.add_rule(
+        Semantic("method.static"),
+        (palette.lime_green(), FontStyle::Italic),
+    );
+
+    builder.add_rules(
         &[
             Semantic("type"),
             Semantic("class"),

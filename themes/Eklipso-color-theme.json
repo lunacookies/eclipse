@@ -9,6 +9,18 @@
 			"foreground": "#CC6C1D",
 			"fontStyle": ""
 		},
+		"function": {
+			"foreground": "#A7EC21",
+			"fontStyle": ""
+		},
+		"method": {
+			"foreground": "#A7EC21",
+			"fontStyle": ""
+		},
+		"method.static": {
+			"foreground": "#96EC3F",
+			"italic": true
+		},
 		"type": {
 			"foreground": "#1290C3",
 			"fontStyle": ""
