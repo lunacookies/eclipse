@@ -2,7 +2,11 @@
 {
 	"name": "Eklipso",
 	"type": "dark",
-	"colors": {},
+	"colors": {
+		"editor.background": "#2E2E2E",
+		"foreground": "#D9E8F7",
+		"editor.foreground": "#D9E8F7"
+	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {

@@ -8,7 +8,13 @@ pub(crate) fn add_rules(builder: &mut ThemeBuilder, palette: &Palette) {
     syntax_highlighting(builder, palette);
 }
 
-fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {}
+fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
+    builder.add_workspace_rule("editor.background", palette.base(BaseScale::Bg));
+    builder.add_workspace_rules(
+        &["foreground", "editor.foreground"],
+        palette.base(BaseScale::Fg),
+    );
+}
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("keyword"), palette.brown());
