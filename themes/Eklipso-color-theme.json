@@ -14,10 +14,6 @@
 			"fontStyle": ""
 		},
 		"variable": {
-			"foreground": "#DDD34F",
-			"fontStyle": ""
-		},
-		"variable.declaration": {
 			"foreground": "#D4D655",
 			"fontStyle": ""
 		},
@@ -30,7 +26,7 @@
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#5197C6",
+			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
 		"function": {
@@ -42,7 +38,6 @@
 			"fontStyle": ""
 		},
 		"method.static": {
-			"foreground": "#91E956",
 			"italic": true
 		},
 		"function.declaration": {
@@ -78,7 +73,7 @@
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#76E2E7",
+			"foreground": "#77E0F2",
 			"fontStyle": ""
 		},
 		"enum": {

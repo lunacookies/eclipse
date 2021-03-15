@@ -25,20 +25,12 @@ impl Palette {
         oklch(Self::LOW_LIGHTNESS, Self::MEDIUM_CHROMA, 55.0)
     }
 
-    pub(crate) fn light_yellow(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::MEDIUM_CHROMA, 105.0)
-    }
-
     pub(crate) fn yellow(&self) -> Oklch {
         oklch(Self::HIGH_LIGHTNESS, Self::MEDIUM_CHROMA, 110.0)
     }
 
-    pub(crate) fn light_lime_green(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::HIGH_CHROMA, 130.0)
-    }
-
     pub(crate) fn lime_green(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::HIGH_CHROMA, 135.0)
+        oklch(Self::HIGH_LIGHTNESS, Self::HIGH_CHROMA, 130.0)
     }
 
     pub(crate) fn green(&self) -> Oklch {
@@ -53,10 +45,6 @@ impl Palette {
         oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 175.0)
     }
 
-    pub(crate) fn light_cyan(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 200.0)
-    }
-
     pub(crate) fn cyan(&self) -> Oklch {
         oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 210.0)
     }
@@ -65,12 +53,8 @@ impl Palette {
         oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 225.0)
     }
 
-    pub(crate) fn dark_blue(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::LOW_CHROMA, 235.0)
-    }
-
     pub(crate) fn blue(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::LOW_CHROMA, 240.0)
+        oklch(Self::LOW_LIGHTNESS, Self::LOW_CHROMA, 235.0)
     }
 
     pub(crate) fn bright_blue(&self) -> Oklch {
