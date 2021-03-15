@@ -1,0 +1,50 @@
+// Do not edit directly; this file is generated.
+{
+	"name": "Eklipso",
+	"type": "dark",
+	"colors": {},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"keyword": {
+			"foreground": "#CC6C1D",
+			"fontStyle": ""
+		},
+		"type": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"class": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"struct": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"enum": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"enumMember": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"builtinType": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"typeAlias": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"typeParameter": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		},
+		"interface": {
+			"foreground": "#1290C3",
+			"fontStyle": ""
+		}
+	},
+	"tokenColors": []
+}
