@@ -20,7 +20,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("struct"),
             Semantic("builtinType"),
             Semantic("typeAlias"),
-            Semantic("typeParameter"),
         ],
         palette.blue(),
     );
@@ -29,4 +28,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("enum"), (palette.pink(), FontStyle::Italic));
     builder.add_rule(Semantic("enumMember"), (palette.cyan(), FontStyle::Italic));
+
+    builder.add_rule(Semantic("typeParameter"), palette.salmon());
 }

@@ -29,10 +29,6 @@
 			"foreground": "#1290C3",
 			"fontStyle": ""
 		},
-		"typeParameter": {
-			"foreground": "#1290C3",
-			"fontStyle": ""
-		},
 		"interface": {
 			"foreground": "#80F2F6",
 			"fontStyle": ""
@@ -44,6 +40,10 @@
 		"enumMember": {
 			"foreground": "#8DDAF8",
 			"italic": true
+		},
+		"typeParameter": {
+			"foreground": "#BFA4A4",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": []
