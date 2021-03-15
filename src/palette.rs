@@ -9,67 +9,67 @@ impl Palette {
     }
 
     pub(crate) fn salmon(&self) -> Oklch {
-        oklch(0.74244213, 0.03172374, 17.786991)
+        oklch(0.75, 0.03, 20.0)
     }
 
     pub(crate) fn brown(&self) -> Oklch {
-        oklch(0.6307279, 0.1475799, 53.699818)
+        oklch(0.65, 0.15, 55.0)
     }
 
     pub(crate) fn light_yellow(&self) -> Oklch {
-        oklch(0.9256173, 0.13718618, 105.65656)
+        oklch(0.9, 0.15, 105.0)
     }
 
     pub(crate) fn yellow(&self) -> Oklch {
-        oklch(0.9303855, 0.20273693, 109.78146)
+        oklch(0.95, 0.2, 110.0)
     }
 
     pub(crate) fn light_lime_green(&self) -> Oklch {
-        oklch(0.8648584, 0.21983564, 128.32455)
+        oklch(0.85, 0.22, 130.0)
     }
 
     pub(crate) fn lime_green(&self) -> Oklch {
-        oklch(0.856865, 0.21560241, 132.73979)
+        oklch(0.85, 0.22, 135.0)
     }
 
     pub(crate) fn green(&self) -> Oklch {
-        oklch(0.6757668, 0.19794942, 145.87831)
+        oklch(0.65, 0.2, 145.0)
     }
 
     pub(crate) fn neon_green(&self) -> Oklch {
-        oklch(0.88403714, 0.15421008, 152.81999)
+        oklch(0.9, 0.15, 155.0)
     }
 
     pub(crate) fn turquoise(&self) -> Oklch {
-        oklch(0.7386806, 0.13793829, 173.58904)
+        oklch(0.75, 0.13, 175.0)
     }
 
     pub(crate) fn light_cyan(&self) -> Oklch {
-        oklch(0.8956409, 0.10436068, 198.51047)
+        oklch(0.9, 0.1, 200.0)
     }
 
     pub(crate) fn cyan(&self) -> Oklch {
-        oklch(0.8484357, 0.113502264, 211.77254)
+        oklch(0.85, 0.11, 210.0)
     }
 
     pub(crate) fn light_blue(&self) -> Oklch {
-        oklch(0.8488954, 0.0866772, 224.72339)
+        oklch(0.85, 0.085, 225.0)
     }
 
     pub(crate) fn dark_blue(&self) -> Oklch {
-        oklch(0.61555946, 0.12401431, 233.3464)
+        oklch(0.6, 0.12, 235.0)
     }
 
     pub(crate) fn blue(&self) -> Oklch {
-        oklch(0.65661603, 0.074155696, 242.23978)
+        oklch(0.65, 0.07, 240.0)
     }
 
     pub(crate) fn bright_blue(&self) -> Oklch {
-        oklch(0.7411311, 0.1336519, 260.34583)
+        oklch(0.75, 0.13, 260.0)
     }
 
     pub(crate) fn pink(&self) -> Oklch {
-        oklch(0.6994459, 0.11785177, 336.03506)
+        oklch(0.7, 0.12, 335.0)
     }
 }
 

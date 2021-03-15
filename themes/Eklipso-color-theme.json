@@ -10,101 +10,101 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#CC6C1D",
+			"foreground": "#D3721E",
 			"fontStyle": ""
 		},
 		"variable": {
-			"foreground": "#F3EC79",
+			"foreground": "#EDE361",
 			"fontStyle": ""
 		},
 		"variable.declaration": {
-			"foreground": "#F2F200",
+			"foreground": "#F8F929",
 			"fontStyle": ""
 		},
 		"parameter": {
-			"foreground": "#79ABFF",
+			"foreground": "#7DAEFF",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#17C6A3",
+			"foreground": "#32C8A9",
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#6897BB",
+			"foreground": "#6795B6",
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#A7EC21",
+			"foreground": "#9CE824",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#A7EC21",
+			"foreground": "#9CE824",
 			"fontStyle": ""
 		},
 		"method.static": {
-			"foreground": "#96EC3F",
+			"foreground": "#8AEC41",
 			"italic": true
 		},
 		"function.declaration": {
-			"foreground": "#1EB540",
+			"foreground": "#11AD32",
 			"fontStyle": ""
 		},
 		"method.declaration": {
-			"foreground": "#1EB540",
+			"foreground": "#11AD32",
 			"fontStyle": ""
 		},
 		"macro": {
-			"foreground": "#80F6A7",
+			"foreground": "#83FBB2",
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#1290C3",
+			"foreground": "#1B8ABD",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#1290C3",
+			"foreground": "#1B8ABD",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#1290C3",
+			"foreground": "#1B8ABD",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#1290C3",
+			"foreground": "#1B8ABD",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#1290C3",
+			"foreground": "#1B8ABD",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#80F2F6",
+			"foreground": "#87F2F8",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#CC81BA",
+			"foreground": "#CC81BC",
 			"italic": true
 		},
 		"enumMember": {
-			"foreground": "#8DDAF8",
+			"foreground": "#8FDAF8",
 			"italic": true
 		},
 		"*.constant": {
-			"foreground": "#8DDAF8",
+			"foreground": "#8FDAF8",
 			"bold": true,
 			"italic": true
 		},
 		"variable.static": {
-			"foreground": "#8DDAF8",
+			"foreground": "#8FDAF8",
 			"bold": true,
 			"italic": true
 		},
 		"typeParameter": {
-			"foreground": "#BFA4A4",
+			"foreground": "#C0A7A6",
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#66E1F8",
+			"foreground": "#6BE1F5",
 			"fontStyle": ""
 		},
 		"attribute": {
