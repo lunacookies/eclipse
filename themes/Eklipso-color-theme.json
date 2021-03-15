@@ -21,10 +21,6 @@
 			"foreground": "#1290C3",
 			"fontStyle": ""
 		},
-		"enumMember": {
-			"foreground": "#1290C3",
-			"fontStyle": ""
-		},
 		"builtinType": {
 			"foreground": "#1290C3",
 			"fontStyle": ""
@@ -43,6 +39,10 @@
 		},
 		"enum": {
 			"foreground": "#CC81BA",
+			"italic": true
+		},
+		"enumMember": {
+			"foreground": "#8DDAF8",
 			"italic": true
 		}
 	},

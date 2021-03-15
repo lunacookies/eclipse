@@ -18,7 +18,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("type"),
             Semantic("class"),
             Semantic("struct"),
-            Semantic("enumMember"),
             Semantic("builtinType"),
             Semantic("typeAlias"),
             Semantic("typeParameter"),
@@ -26,7 +25,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.blue(),
     );
 
-    builder.add_rule(Semantic("interface"), palette.cyan());
+    builder.add_rule(Semantic("interface"), palette.light_blue());
 
     builder.add_rule(Semantic("enum"), (palette.pink(), FontStyle::Italic));
+    builder.add_rule(Semantic("enumMember"), (palette.cyan(), FontStyle::Italic));
 }
