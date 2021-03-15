@@ -12,14 +12,9 @@ impl Palette {
     const MEDIUM_LIGHTNESS: f32 = 0.75;
     const HIGH_LIGHTNESS: f32 = 0.85;
 
-    const LOWER_CHROMA: f32 = 0.03;
     const LOW_CHROMA: f32 = 0.1;
     const MEDIUM_CHROMA: f32 = 0.15;
     const HIGH_CHROMA: f32 = 0.2;
-
-    pub(crate) fn salmon(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::LOWER_CHROMA, 20.0)
-    }
 
     pub(crate) fn brown(&self) -> Oklch {
         oklch(Self::LOW_LIGHTNESS, Self::MEDIUM_CHROMA, 55.0)

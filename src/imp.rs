@@ -64,7 +64,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         (palette.light_blue(), FontStyle::BoldItalic),
     );
 
-    builder.add_rule(Semantic("typeParameter"), palette.salmon());
+    builder.add_rule(Semantic("typeParameter"), palette.neon_green());
 
     builder.add_rule(Semantic("property"), palette.cyan());
 
