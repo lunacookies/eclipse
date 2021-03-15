@@ -25,6 +25,13 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         Semantic("method.static"),
         (palette.lime_green(), FontStyle::Italic),
     );
+    builder.add_rules(
+        &[
+            Semantic("function.declaration"),
+            Semantic("method.declaration"),
+        ],
+        palette.green(),
+    );
 
     builder.add_rules(
         &[

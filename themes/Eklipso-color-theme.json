@@ -33,6 +33,14 @@
 			"foreground": "#96EC3F",
 			"italic": true
 		},
+		"function.declaration": {
+			"foreground": "#1EB540",
+			"fontStyle": ""
+		},
+		"method.declaration": {
+			"foreground": "#1EB540",
+			"fontStyle": ""
+		},
 		"type": {
 			"foreground": "#1290C3",
 			"fontStyle": ""
