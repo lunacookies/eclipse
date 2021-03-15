@@ -1,4 +1,5 @@
 use crate::palette::{BaseScale, Palette};
+use mottle::style::FontStyle;
 use mottle::theme::Scope::*;
 use mottle::theme::ThemeBuilder;
 
@@ -17,7 +18,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("type"),
             Semantic("class"),
             Semantic("struct"),
-            Semantic("enum"),
             Semantic("enumMember"),
             Semantic("builtinType"),
             Semantic("typeAlias"),
@@ -27,4 +27,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_rule(Semantic("interface"), palette.cyan());
+
+    builder.add_rule(Semantic("enum"), (palette.pink(), FontStyle::Italic));
 }

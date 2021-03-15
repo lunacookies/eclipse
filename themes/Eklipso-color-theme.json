@@ -21,10 +21,6 @@
 			"foreground": "#1290C3",
 			"fontStyle": ""
 		},
-		"enum": {
-			"foreground": "#1290C3",
-			"fontStyle": ""
-		},
 		"enumMember": {
 			"foreground": "#1290C3",
 			"fontStyle": ""
@@ -44,6 +40,10 @@
 		"interface": {
 			"foreground": "#80F2F6",
 			"fontStyle": ""
+		},
+		"enum": {
+			"foreground": "#CC81BA",
+			"italic": true
 		}
 	},
 	"tokenColors": []
