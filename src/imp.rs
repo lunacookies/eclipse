@@ -19,7 +19,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("keyword"), palette.brown());
 
-    builder.add_rule(Semantic("variable"), palette.yellow());
+    builder.add_rule(Semantic("variable"), palette.light_yellow());
+    builder.add_rule(Semantic("variable.declaration"), palette.yellow());
     builder.add_rule(Semantic("parameter"), palette.bright_blue());
 
     builder.add_rule(Semantic("string"), palette.turquoise());

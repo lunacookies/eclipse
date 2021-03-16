@@ -14,7 +14,11 @@
 			"fontStyle": ""
 		},
 		"variable": {
-			"foreground": "#D4D655",
+			"foreground": "#E8EB9C",
+			"fontStyle": ""
+		},
+		"variable.declaration": {
+			"foreground": "#EEEF07",
 			"fontStyle": ""
 		},
 		"parameter": {
