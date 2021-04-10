@@ -26,11 +26,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("string"), palette.turquoise());
     builder.add_rule(Semantic("number"), palette.blue());
 
+    builder.add_rule(Semantic("method"), palette.lime_green());
     builder.add_rules(
-        &[Semantic("function"), Semantic("method")],
-        palette.lime_green(),
+        &[Semantic("function"), Semantic("method.static")],
+        (palette.lime_green(), FontStyle::Italic),
     );
-    builder.add_rule(Semantic("method.static"), FontStyle::Italic);
+    builder.add_rules(
+        &[Semantic("function.trait"), Semantic("method.trait")],
+        palette.neon_green(),
+    );
     builder.add_rules(
         &[
             Semantic("function.declaration"),
@@ -47,22 +51,20 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("class"),
             Semantic("struct"),
             Semantic("builtinType"),
-            Semantic("typeAlias"),
         ],
         palette.blue(),
     );
 
-    builder.add_rule(Semantic("interface"), palette.cyan());
+    builder.add_rule(Semantic("typeAlias"), palette.light_blue());
+
+    builder.add_rule(Semantic("interface"), palette.aqua());
 
     builder.add_rule(Semantic("enum"), (palette.pink(), FontStyle::Italic));
-    builder.add_rule(
-        Semantic("enumMember"),
-        (palette.light_blue(), FontStyle::Italic),
-    );
+    builder.add_rule(Semantic("enumMember"), (palette.azure(), FontStyle::Italic));
 
     builder.add_rules(
         &[Semantic("*.constant"), Semantic("variable.static")],
-        (palette.light_blue(), FontStyle::BoldItalic),
+        (palette.azure(), FontStyle::BoldItalic),
     );
 
     builder.add_rule(Semantic("typeParameter"), palette.neon_green());

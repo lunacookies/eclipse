@@ -33,16 +33,25 @@
 			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
-		"function": {
-			"foreground": "#A1E645",
-			"fontStyle": ""
-		},
 		"method": {
 			"foreground": "#A1E645",
 			"fontStyle": ""
 		},
-		"method.static": {
+		"function": {
+			"foreground": "#A1E645",
 			"italic": true
+		},
+		"method.static": {
+			"foreground": "#A1E645",
+			"italic": true
+		},
+		"function.trait": {
+			"foreground": "#72EAA2",
+			"fontStyle": ""
+		},
+		"method.trait": {
+			"foreground": "#72EAA2",
+			"fontStyle": ""
 		},
 		"function.declaration": {
 			"foreground": "#11AD32",
@@ -73,11 +82,11 @@
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#4A99C3",
+			"foreground": "#6AB8E4",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#77E0F2",
+			"foreground": "#8EF9FF",
 			"fontStyle": ""
 		},
 		"enum": {
