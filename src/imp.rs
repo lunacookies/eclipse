@@ -17,7 +17,10 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rule(Semantic("keyword"), palette.brown());
+    builder.add_rules(
+        &[Semantic("keyword"), Semantic("builtinType")],
+        palette.brown(),
+    );
 
     builder.add_rule(Semantic("variable"), palette.light_yellow());
     builder.add_rule(Semantic("variable.declaration"), palette.yellow());
@@ -46,12 +49,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("macro"), palette.neon_green());
 
     builder.add_rules(
-        &[
-            Semantic("type"),
-            Semantic("class"),
-            Semantic("struct"),
-            Semantic("builtinType"),
-        ],
+        &[Semantic("type"), Semantic("class"), Semantic("struct")],
         palette.blue(),
     );
 

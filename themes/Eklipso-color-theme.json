@@ -13,6 +13,10 @@
 			"foreground": "#D3721E",
 			"fontStyle": ""
 		},
+		"builtinType": {
+			"foreground": "#D3721E",
+			"fontStyle": ""
+		},
 		"variable": {
 			"foreground": "#E8EB9C",
 			"fontStyle": ""
@@ -74,10 +78,6 @@
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#4A99C3",
-			"fontStyle": ""
-		},
-		"builtinType": {
 			"foreground": "#4A99C3",
 			"fontStyle": ""
 		},
