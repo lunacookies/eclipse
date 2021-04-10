@@ -117,7 +117,7 @@
 		},
 		"lifetime": {
 			"foreground": "#11AD32",
-			"fontStyle": ""
+			"italic": true
 		},
 		"attribute": {
 			"foreground": "#A1ABB5",

@@ -69,7 +69,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("property"), palette.cyan());
 
-    builder.add_rule(Semantic("lifetime"), palette.green());
+    builder.add_rule(Semantic("lifetime"), (palette.green(), FontStyle::Italic));
 
     builder.add_rules(
         &[Semantic("attribute"), Semantic("*.attribute")],
