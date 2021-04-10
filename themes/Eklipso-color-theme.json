@@ -115,6 +115,10 @@
 			"foreground": "#77E0F2",
 			"fontStyle": ""
 		},
+		"lifetime": {
+			"foreground": "#11AD32",
+			"fontStyle": ""
+		},
 		"attribute": {
 			"foreground": "#A1ABB5",
 			"italic": true
