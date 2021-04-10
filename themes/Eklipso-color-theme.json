@@ -33,6 +33,10 @@
 			"foreground": "#61C3AA",
 			"fontStyle": ""
 		},
+		"characterLiteral": {
+			"foreground": "#61C3AA",
+			"fontStyle": ""
+		},
 		"number": {
 			"foreground": "#4A99C3",
 			"fontStyle": ""
