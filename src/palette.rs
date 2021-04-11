@@ -1,112 +1,60 @@
-use std::ops::Range;
-use tincture::{Hue, Oklch};
+use crate::colors::{BaseScale, Dark};
+use tincture::Oklch;
 
-pub(crate) struct Palette;
+pub(crate) struct Palette {
+    pub(crate) background: Oklch,
+    pub(crate) foreground: Oklch,
+    pub(crate) keywords: Oklch,
+    pub(crate) variables: Oklch,
+    pub(crate) variable_declarations: Oklch,
+    pub(crate) parameters: Oklch,
+    pub(crate) strings: Oklch,
+    pub(crate) numbers: Oklch,
+    pub(crate) methods: Oklch,
+    pub(crate) static_methods: Oklch,
+    pub(crate) trait_methods: Oklch,
+    pub(crate) method_declarations: Oklch,
+    pub(crate) macros: Oklch,
+    pub(crate) types: Oklch,
+    pub(crate) type_aliases: Oklch,
+    pub(crate) interfaces: Oklch,
+    pub(crate) enums: Oklch,
+    pub(crate) enum_members: Oklch,
+    pub(crate) constants: Oklch,
+    pub(crate) type_parameters: Oklch,
+    pub(crate) properties: Oklch,
+    pub(crate) lifetime: Oklch,
+    pub(crate) attributes: Oklch,
+}
 
 impl Palette {
-    pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
-        oklch(scale.lightness(), scale.chroma(), 248.15926)
-    }
+    pub(crate) fn dark() -> Self {
+        let colors = Dark;
 
-    const LOW_LIGHTNESS: f32 = 0.65;
-    const MEDIUM_LIGHTNESS: f32 = 0.75;
-    const HIGH_LIGHTNESS: f32 = 0.85;
-    const HIGHER_LIGHTNESS: f32 = 0.92;
-
-    const LOW_CHROMA: f32 = 0.1;
-    const MEDIUM_CHROMA: f32 = 0.15;
-    const HIGH_CHROMA: f32 = 0.2;
-
-    pub(crate) fn brown(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::MEDIUM_CHROMA, 55.0)
-    }
-
-    pub(crate) fn yellow(&self) -> Oklch {
-        oklch(Self::HIGHER_LIGHTNESS, Self::HIGH_CHROMA, 110.0)
-    }
-
-    pub(crate) fn light_yellow(&self) -> Oklch {
-        oklch(Self::HIGHER_LIGHTNESS, Self::LOW_CHROMA, 110.0)
-    }
-
-    pub(crate) fn lime_green(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::HIGH_CHROMA, 130.0)
-    }
-
-    pub(crate) fn green(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::HIGH_CHROMA, 145.0)
-    }
-
-    pub(crate) fn neon_green(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::MEDIUM_CHROMA, 155.0)
-    }
-
-    pub(crate) fn turquoise(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 175.0)
-    }
-
-    pub(crate) fn aqua(&self) -> Oklch {
-        oklch(Self::HIGHER_LIGHTNESS, Self::LOW_CHROMA, 200.0)
-    }
-
-    pub(crate) fn cyan(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 210.0)
-    }
-
-    pub(crate) fn azure(&self) -> Oklch {
-        oklch(Self::HIGH_LIGHTNESS, Self::LOW_CHROMA, 225.0)
-    }
-
-    pub(crate) fn blue(&self) -> Oklch {
-        oklch(Self::LOW_LIGHTNESS, Self::LOW_CHROMA, 235.0)
-    }
-
-    pub(crate) fn light_blue(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 235.0)
-    }
-
-    pub(crate) fn bright_blue(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 260.0)
-    }
-
-    pub(crate) fn pink(&self) -> Oklch {
-        oklch(Self::MEDIUM_LIGHTNESS, Self::LOW_CHROMA, 335.0)
-    }
-}
-
-#[derive(Debug, Clone, Copy)]
-pub(crate) enum BaseScale {
-    Bg,
-    DarkFg,
-    Fg,
-}
-
-impl BaseScale {
-    fn lightness(self) -> f32 {
-        lerp(self.value(), 0.3..0.925)
-    }
-
-    fn chroma(self) -> f32 {
-        lerp(self.value(), 0.0..0.026)
-    }
-
-    fn value(self) -> f32 {
-        match self {
-            Self::Bg => 0.0,
-            Self::DarkFg => 0.7,
-            Self::Fg => 1.0,
+        Self {
+            background: colors.base(BaseScale::Bg),
+            foreground: colors.base(BaseScale::Fg),
+            keywords: colors.brown(),
+            variables: colors.light_yellow(),
+            variable_declarations: colors.yellow(),
+            parameters: colors.bright_blue(),
+            strings: colors.turquoise(),
+            numbers: colors.blue(),
+            methods: colors.lime_green(),
+            static_methods: colors.lime_green(),
+            trait_methods: colors.neon_green(),
+            method_declarations: colors.green(),
+            macros: colors.neon_green(),
+            types: colors.blue(),
+            type_aliases: colors.light_blue(),
+            interfaces: colors.aqua(),
+            enums: colors.pink(),
+            enum_members: colors.azure(),
+            constants: colors.azure(),
+            type_parameters: colors.neon_green(),
+            properties: colors.cyan(),
+            lifetime: colors.green(),
+            attributes: colors.base(BaseScale::DarkFg),
         }
     }
-}
-
-fn oklch(l: f32, c: f32, h: f32) -> Oklch {
-    Oklch {
-        l,
-        c,
-        h: Hue::from_degrees(h).unwrap(),
-    }
-}
-
-fn lerp(x: f32, range: Range<f32>) -> f32 {
-    x * (range.end - range.start) + range.start
 }

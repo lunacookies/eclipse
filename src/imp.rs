@@ -1,4 +1,4 @@
-use crate::palette::{BaseScale, Palette};
+use crate::palette::Palette;
 use mottle::style::FontStyle;
 use mottle::theme::Scope::*;
 use mottle::theme::ThemeBuilder;
@@ -9,73 +9,76 @@ pub(crate) fn add_rules(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_workspace_rule("editor.background", palette.base(BaseScale::Bg));
-    builder.add_workspace_rules(
-        &["foreground", "editor.foreground"],
-        palette.base(BaseScale::Fg),
-    );
+    builder.add_workspace_rule("editor.background", palette.background);
+    builder.add_workspace_rules(&["foreground", "editor.foreground"], palette.foreground);
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rules(
         &[Semantic("keyword"), Semantic("builtinType")],
-        palette.brown(),
+        palette.keywords,
     );
 
-    builder.add_rule(Semantic("variable"), palette.light_yellow());
-    builder.add_rule(Semantic("variable.declaration"), palette.yellow());
-    builder.add_rule(Semantic("parameter"), palette.bright_blue());
+    builder.add_rule(Semantic("variable"), palette.variables);
+    builder.add_rule(
+        Semantic("variable.declaration"),
+        palette.variable_declarations,
+    );
+    builder.add_rule(Semantic("parameter"), palette.parameters);
 
     builder.add_rules(
         &[Semantic("string"), Semantic("characterLiteral")],
-        palette.turquoise(),
+        palette.strings,
     );
-    builder.add_rule(Semantic("number"), palette.blue());
+    builder.add_rule(Semantic("number"), palette.numbers);
 
-    builder.add_rule(Semantic("method"), palette.lime_green());
+    builder.add_rule(Semantic("method"), palette.methods);
     builder.add_rules(
         &[Semantic("function"), Semantic("method.static")],
-        (palette.lime_green(), FontStyle::Italic),
+        (palette.static_methods, FontStyle::Italic),
     );
     builder.add_rules(
         &[Semantic("function.trait"), Semantic("method.trait")],
-        palette.neon_green(),
+        palette.trait_methods,
     );
     builder.add_rules(
         &[
             Semantic("function.declaration"),
             Semantic("method.declaration"),
         ],
-        palette.green(),
+        palette.method_declarations,
     );
 
-    builder.add_rule(Semantic("macro"), palette.neon_green());
+    builder.add_rule(Semantic("macro"), palette.macros);
 
     builder.add_rules(
         &[Semantic("type"), Semantic("class"), Semantic("struct")],
-        palette.blue(),
+        palette.types,
     );
 
-    builder.add_rule(Semantic("typeAlias"), palette.light_blue());
+    builder.add_rule(Semantic("typeAlias"), palette.type_aliases);
 
-    builder.add_rule(Semantic("interface"), palette.aqua());
+    builder.add_rule(Semantic("interface"), palette.interfaces);
 
-    builder.add_rule(Semantic("enum"), (palette.pink(), FontStyle::Italic));
-    builder.add_rule(Semantic("enumMember"), (palette.azure(), FontStyle::Italic));
+    builder.add_rule(Semantic("enum"), (palette.enums, FontStyle::Italic));
+    builder.add_rule(
+        Semantic("enumMember"),
+        (palette.enum_members, FontStyle::Italic),
+    );
 
     builder.add_rules(
         &[Semantic("*.constant"), Semantic("variable.static")],
-        (palette.azure(), FontStyle::BoldItalic),
+        (palette.constants, FontStyle::BoldItalic),
     );
 
-    builder.add_rule(Semantic("typeParameter"), palette.neon_green());
+    builder.add_rule(Semantic("typeParameter"), palette.type_parameters);
 
-    builder.add_rule(Semantic("property"), palette.cyan());
+    builder.add_rule(Semantic("property"), palette.properties);
 
-    builder.add_rule(Semantic("lifetime"), (palette.green(), FontStyle::Italic));
+    builder.add_rule(Semantic("lifetime"), (palette.lifetime, FontStyle::Italic));
 
     builder.add_rules(
         &[Semantic("attribute"), Semantic("*.attribute")],
-        (palette.base(BaseScale::DarkFg), FontStyle::Italic),
+        (palette.attributes, FontStyle::Italic),
     );
 }
