@@ -2,8 +2,7 @@ use crate::colors::{BaseScale, Dark};
 use tincture::Oklch;
 
 pub(crate) trait Palette {
-    fn background(&self) -> Oklch;
-    fn foreground(&self) -> Oklch;
+    fn base(&self, scale: BaseScale) -> Oklch;
     fn keywords(&self) -> Oklch;
     fn variables(&self) -> Oklch;
     fn variable_declarations(&self) -> Oklch;
@@ -24,15 +23,11 @@ pub(crate) trait Palette {
     fn type_parameters(&self) -> Oklch;
     fn properties(&self) -> Oklch;
     fn lifetime(&self) -> Oklch;
-    fn attributes(&self) -> Oklch;
 }
 
 impl Palette for Dark {
-    fn background(&self) -> Oklch {
-        self.base(BaseScale::Bg)
-    }
-    fn foreground(&self) -> Oklch {
-        self.base(BaseScale::Fg)
+    fn base(&self, scale: BaseScale) -> Oklch {
+        self.base(scale)
     }
     fn keywords(&self) -> Oklch {
         self.brown()
@@ -93,8 +88,5 @@ impl Palette for Dark {
     }
     fn lifetime(&self) -> Oklch {
         self.green()
-    }
-    fn attributes(&self) -> Oklch {
-        self.base(BaseScale::DarkFg)
     }
 }

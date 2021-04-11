@@ -1,3 +1,4 @@
+use crate::colors::BaseScale;
 use crate::palette::Palette;
 use mottle::style::FontStyle;
 use mottle::theme::Scope::*;
@@ -9,8 +10,11 @@ pub(crate) fn add_rules(builder: &mut ThemeBuilder, palette: &impl Palette) {
 }
 
 fn workspace_colors(builder: &mut ThemeBuilder, palette: &impl Palette) {
-    builder.add_workspace_rule("editor.background", palette.background());
-    builder.add_workspace_rules(&["foreground", "editor.foreground"], palette.foreground());
+    builder.add_workspace_rule("editor.background", palette.base(BaseScale::Bg));
+    builder.add_workspace_rules(
+        &["foreground", "editor.foreground"],
+        palette.base(BaseScale::Fg),
+    );
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &impl Palette) {
@@ -82,6 +86,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &impl Palette) {
 
     builder.add_rules(
         &[Semantic("attribute"), Semantic("*.attribute")],
-        (palette.attributes(), FontStyle::Italic),
+        (palette.base(BaseScale::DarkFg), FontStyle::Italic),
     );
 }
