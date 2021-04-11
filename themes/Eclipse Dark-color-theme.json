@@ -4,8 +4,8 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#2E2E2E",
-		"foreground": "#D9E8F7",
-		"editor.foreground": "#D9E8F7"
+		"foreground": "#DAE8F7",
+		"editor.foreground": "#DAE8F7"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
@@ -124,11 +124,11 @@
 			"italic": true
 		},
 		"attribute": {
-			"foreground": "#A1ABB5",
+			"foreground": "#A2ABB5",
 			"italic": true
 		},
 		"*.attribute": {
-			"foreground": "#A1ABB5",
+			"foreground": "#A2ABB5",
 			"italic": true
 		}
 	},

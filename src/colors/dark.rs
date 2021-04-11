@@ -5,7 +5,7 @@ pub(crate) struct Dark;
 
 impl Dark {
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
-        oklch(base_lightness(scale), base_chroma(scale), 248.15926)
+        oklch(base_lightness(scale), base_chroma(scale), 250.0)
     }
 
     const LOW_LIGHTNESS: f32 = 0.65;
