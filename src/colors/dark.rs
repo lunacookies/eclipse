@@ -85,7 +85,7 @@ fn base_chroma(scale: BaseScale) -> f32 {
 fn base_value(scale: BaseScale) -> f32 {
     match scale {
         BaseScale::Bg => 0.0,
-        BaseScale::DarkFg => 0.7,
+        BaseScale::DimFg => 0.7,
         BaseScale::Fg => 1.0,
     }
 }

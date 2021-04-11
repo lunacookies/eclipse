@@ -8,7 +8,7 @@ use tincture::{Hue, Oklch};
 #[derive(Debug, Clone, Copy)]
 pub(crate) enum BaseScale {
     Bg,
-    DarkFg,
+    DimFg,
     Fg,
 }
 

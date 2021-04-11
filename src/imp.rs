@@ -86,6 +86,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &impl Palette) {
 
     builder.add_rules(
         &[Semantic("attribute"), Semantic("*.attribute")],
-        (palette.base(BaseScale::DarkFg), FontStyle::Italic),
+        (palette.base(BaseScale::DimFg), FontStyle::Italic),
     );
 }
