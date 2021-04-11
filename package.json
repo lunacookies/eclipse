@@ -1,11 +1,11 @@
 {
-  "name": "eklipso",
-  "displayName": "Eklipso",
-  "description": "A theme based on Apprentice and Sorcerer",
+  "name": "eclipse",
+  "displayName": "Eclipse",
+  "description": "A theme based on Eclipse’s default theme",
   "publisher": "arzg",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/arzg/eklipso"
+    "url": "https://github.com/arzg/eclipse"
   },
   "version": "0.1.0",
   "engines": {
@@ -20,9 +20,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Eklipso",
+        "label": "Eclipse",
         "uiTheme": "vs-dark",
-        "path": "./themes/Eklipso-color-theme.json"
+        "path": "./themes/Eclipse-color-theme.json"
       }
     ]
   }

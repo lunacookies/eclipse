@@ -7,9 +7,9 @@ use std::io;
 fn main() -> io::Result<()> {
     let palette = palette::Palette;
 
-    let mut icefall = ThemeBuilder::new("Eklipso".to_string(), Type::Dark);
-    imp::add_rules(&mut icefall, &palette);
-    icefall.build().save()?;
+    let mut eclipse = ThemeBuilder::new("Eclipse".to_string(), Type::Dark);
+    imp::add_rules(&mut eclipse, &palette);
+    eclipse.build().save()?;
 
     Ok(())
 }
