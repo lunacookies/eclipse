@@ -20,9 +20,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Eclipse",
+        "label": "Eclipse Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Eclipse-color-theme.json"
+        "path": "./themes/Eclipse Dark-color-theme.json"
       }
     ]
   }
