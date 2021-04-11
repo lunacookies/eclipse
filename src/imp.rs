@@ -18,10 +18,17 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &impl Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &impl Palette) {
-    builder.add_rules(
-        &[Semantic("keyword"), Semantic("builtinType")],
-        palette.keywords(),
-    );
+    if palette.are_keywords_bold() {
+        builder.add_rules(
+            &[Semantic("keyword"), Semantic("builtinType")],
+            (palette.keywords(), FontStyle::Bold),
+        );
+    } else {
+        builder.add_rules(
+            &[Semantic("keyword"), Semantic("builtinType")],
+            palette.keywords(),
+        );
+    }
 
     builder.add_rule(Semantic("variable"), palette.variables());
     builder.add_rule(
@@ -64,11 +71,23 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &impl Palette) {
 
     builder.add_rule(Semantic("interface"), palette.interfaces());
 
-    builder.add_rule(Semantic("enum"), (palette.enums(), FontStyle::Italic));
-    builder.add_rule(
-        Semantic("enumMember"),
-        (palette.enum_members(), FontStyle::Italic),
-    );
+    if palette.are_enums_italic() {
+        builder.add_rule(Semantic("enum"), (palette.enums(), FontStyle::Italic));
+    } else {
+        builder.add_rule(Semantic("enum"), palette.enums());
+    }
+
+    if palette.are_enum_members_bold() {
+        builder.add_rule(
+            Semantic("enumMember"),
+            (palette.enum_members(), FontStyle::BoldItalic),
+        );
+    } else {
+        builder.add_rule(
+            Semantic("enumMember"),
+            (palette.enum_members(), FontStyle::Italic),
+        );
+    }
 
     builder.add_rules(
         &[Semantic("*.constant"), Semantic("variable.static")],

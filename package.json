@@ -23,6 +23,11 @@
         "label": "Eclipse Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Eclipse Dark-color-theme.json"
+      },
+      {
+        "label": "Eclipse Light",
+        "uiTheme": "vs",
+        "path": "./themes/Eclipse Light-color-theme.json"
       }
     ]
   }

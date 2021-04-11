@@ -7,6 +7,7 @@ use std::io;
 
 fn main() -> io::Result<()> {
     gen_theme("Eclipse Dark", colors::Dark, Type::Dark)?;
+    gen_theme("Eclipse Light", colors::Light, Type::Light)?;
 
     Ok(())
 }

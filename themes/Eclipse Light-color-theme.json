@@ -1,0 +1,137 @@
+// Do not edit directly; this file is generated.
+{
+	"name": "Eclipse Light",
+	"type": "light",
+	"colors": {
+		"editor.background": "#FFFFFF",
+		"foreground": "#000000",
+		"editor.foreground": "#000000"
+	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"keyword": {
+			"foreground": "#7F0055",
+			"bold": true
+		},
+		"builtinType": {
+			"foreground": "#7F0055",
+			"bold": true
+		},
+		"variable": {
+			"foreground": "#6A3E3E",
+			"fontStyle": ""
+		},
+		"variable.declaration": {
+			"foreground": "#6A3E3E",
+			"fontStyle": ""
+		},
+		"parameter": {
+			"foreground": "#6A3E3E",
+			"fontStyle": ""
+		},
+		"string": {
+			"foreground": "#2A00FF",
+			"fontStyle": ""
+		},
+		"characterLiteral": {
+			"foreground": "#2A00FF",
+			"fontStyle": ""
+		},
+		"number": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"method": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"function": {
+			"foreground": "#000000",
+			"italic": true
+		},
+		"method.static": {
+			"foreground": "#000000",
+			"italic": true
+		},
+		"function.trait": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"method.trait": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"function.declaration": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"method.declaration": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"macro": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"type": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"class": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"struct": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"typeAlias": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"interface": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"enum": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"enumMember": {
+			"foreground": "#0000C0",
+			"bold": true,
+			"italic": true
+		},
+		"*.constant": {
+			"foreground": "#000000",
+			"bold": true,
+			"italic": true
+		},
+		"variable.static": {
+			"foreground": "#000000",
+			"bold": true,
+			"italic": true
+		},
+		"typeParameter": {
+			"foreground": "#000000",
+			"fontStyle": ""
+		},
+		"property": {
+			"foreground": "#0000C0",
+			"fontStyle": ""
+		},
+		"lifetime": {
+			"foreground": "#2A00FF",
+			"italic": true
+		},
+		"attribute": {
+			"foreground": "#636363",
+			"italic": true
+		},
+		"*.attribute": {
+			"foreground": "#636363",
+			"italic": true
+		}
+	},
+	"tokenColors": []
+}
