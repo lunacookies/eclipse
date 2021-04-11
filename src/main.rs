@@ -6,10 +6,8 @@ use mottle::theme::{ThemeBuilder, Type};
 use std::io;
 
 fn main() -> io::Result<()> {
-    let palette = palette::Palette::dark();
-
     let mut eclipse = ThemeBuilder::new("Eclipse".to_string(), Type::Dark);
-    imp::add_rules(&mut eclipse, &palette);
+    imp::add_rules(&mut eclipse, &colors::Dark);
     eclipse.build().save()?;
 
     Ok(())
