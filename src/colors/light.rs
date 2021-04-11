@@ -9,19 +9,19 @@ impl Light {
     }
 
     pub(crate) fn maroon(&self) -> Oklch {
-        oklch(0.41668323, 0.061962005, 20.004015)
+        oklch(0.4, 0.06, 20.0)
     }
 
     pub(crate) fn blue(&self) -> Oklch {
-        oklch(0.46220446, 0.30628103, 268.8053)
+        oklch(0.45, 0.29, 270.0)
     }
 
     pub(crate) fn dark_blue(&self) -> Oklch {
-        oklch(0.36510578, 0.25307775, 264.05856)
+        oklch(0.35, 0.24, 265.0)
     }
 
     pub(crate) fn purple(&self) -> Oklch {
-        oklch(0.39466092, 0.16567557, 348.28958)
+        oklch(0.4, 0.16, 350.0)
     }
 }
 

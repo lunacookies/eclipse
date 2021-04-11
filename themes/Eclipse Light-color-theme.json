@@ -10,31 +10,31 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#7F0055",
+			"foreground": "#800953",
 			"bold": true
 		},
 		"builtinType": {
-			"foreground": "#7F0055",
+			"foreground": "#800953",
 			"bold": true
 		},
 		"variable": {
-			"foreground": "#6A3E3E",
+			"foreground": "#643A3A",
 			"fontStyle": ""
 		},
 		"variable.declaration": {
-			"foreground": "#6A3E3E",
+			"foreground": "#643A3A",
 			"fontStyle": ""
 		},
 		"parameter": {
-			"foreground": "#6A3E3E",
+			"foreground": "#643A3A",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#2A00FF",
+			"foreground": "#2D0BF2",
 			"fontStyle": ""
 		},
 		"characterLiteral": {
-			"foreground": "#2A00FF",
+			"foreground": "#2D0BF2",
 			"fontStyle": ""
 		},
 		"number": {
@@ -98,7 +98,7 @@
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#0000C0",
+			"foreground": "#0701B4",
 			"bold": true,
 			"italic": true
 		},
@@ -117,11 +117,11 @@
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#0000C0",
+			"foreground": "#0701B4",
 			"fontStyle": ""
 		},
 		"lifetime": {
-			"foreground": "#2A00FF",
+			"foreground": "#2D0BF2",
 			"italic": true
 		},
 		"attribute": {
