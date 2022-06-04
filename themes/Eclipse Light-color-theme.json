@@ -133,5 +133,146 @@
 			"italic": true
 		}
 	},
-	"tokenColors": []
+	"tokenColors": [
+		{
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#800953",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"foreground": "#800953",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "variable.language",
+			"settings": {
+				"foreground": "#800953",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "constant.language",
+			"settings": {
+				"foreground": "#800953",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "entity.name.tag",
+			"settings": {
+				"foreground": "#800953",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#643A3A",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#2D0BF2",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "constant.numeric",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "entity.name.function",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "entity.name.function.macro",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "entity.name.type",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "constant",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": "bold italic"
+			}
+		},
+		{
+			"scope": "support.type.property-name",
+			"settings": {
+				"foreground": "#0701B4",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "entity.name.type.lifetime",
+			"settings": {
+				"foreground": "#2D0BF2",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "punctuation.definition.lifetime",
+			"settings": {
+				"foreground": "#2D0BF2",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#000000",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#2D0BF2",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.quote",
+			"settings": {
+				"foreground": "#643A3A",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.fenced_code",
+			"settings": {
+				"foreground": "#0701B4",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.inline.raw",
+			"settings": {
+				"foreground": "#2D0BF2",
+				"fontStyle": ""
+			}
+		}
+	]
 }
